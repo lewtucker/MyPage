@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slides — Lew Tucker</title>
+  <style>
+    :root {
+      --bg: #f7f5f2; --text: #1a1a1a; --muted: #6b6560;
+      --accent: #8b6f5e; --rule: #e0dbd4; --red: #b81c34;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, serif; background: var(--bg); color: var(--text);
+      display: flex; flex-direction: column; align-items: center;
+      min-height: 100vh; padding: 48px 24px; }
+    header { width: 100%; max-width: 720px; margin-bottom: 40px; }
+    header a { font-size: 13px; color: var(--muted); text-decoration: none; }
+    header a:hover { color: var(--red); }
+    h1 { font-size: 28px; font-weight: normal; color: var(--text); margin-top: 12px; }
+    hr { border: none; border-top: 1px solid var(--rule); margin: 16px 0 0; }
+    .list { width: 100%; max-width: 720px; display: flex; flex-direction: column; gap: 18px; }
+    .card { background: #fff; border: 1px solid var(--rule); padding: 22px 26px;
+      display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+    .card-info h2 { font-size: 20px; font-weight: normal; color: var(--text); margin-bottom: 6px; }
+    .card-info p  { font-size: 14px; color: var(--muted); line-height: 1.6; }
+    .card-links { display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; }
+    .btn { display: inline-block; padding: 7px 18px; font-size: 13px; font-family: Georgia, serif;
+      text-decoration: none; border: 1px solid; white-space: nowrap; }
+    .btn-view { background: var(--red); color: #fff; border-color: var(--red); }
+    .btn-view:hover { background: #8a1228; border-color: #8a1228; }
+    .btn-pdf  { background: transparent; color: var(--muted); border-color: var(--rule); }
+    .btn-pdf:hover  { border-color: var(--muted); color: var(--text); }
+    .date { font-size: 12px; color: var(--muted); margin-top: 10px; font-style: italic; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/">&larr; lewtucker.com</a>
+    <h1>Slides</h1>
+    <hr>
+  </header>
+  <div class="list">
+
+    <div class="card">
+      <div class="card-info">
+        <h2>Parallel Thinking</h2>
+        <p>How a 1985 Boston startup named Thinking Machines invented the architecture
+           that led to modern AI data centers. ZKM Connection Machine Symposium, March 2026.</p>
+        <div class="date">March 2026 &middot; 13 slides</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="Parallel_Thinking.html">View slides</a>
+        <a class="btn btn-pdf"  href="Parallel_Thinking.pdf" target="_blank">PDF &darr;</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
