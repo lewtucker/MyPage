@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lew Tucker</title>
+  <style>
+    :root {
+      --bg: #f7f5f2;
+      --text: #1a1a1a;
+      --muted: #6b6560;
+      --accent: #8b6f5e;
+      --rule: #e0dbd4;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem;
+    }
+
+    .container {
+      max-width: 860px;
+      width: 100%;
+    }
+
+    .header-media {
+      position: relative;
+      margin-bottom: 3.8rem;
+    }
+
+    .banner {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+    }
+
+    .headshot {
+      position: absolute;
+      bottom: -2.4rem;
+      left: 0;
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      border: 3px solid var(--bg);
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 7vw, 3.4rem);
+      font-weight: normal;
+      letter-spacing: -0.025em;
+      line-height: 1;
+      margin-bottom: 1.4rem;
+      text-align: center;
+    }
+
+    .rule {
+      height: 1px;
+      background: var(--rule);
+      margin-bottom: 1.4rem;
+      position: relative;
+    }
+
+    .rule::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2.8rem;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    .label-title {
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.8rem;
+      text-align: center;
+    }
+
+    .bio {
+      font-size: 1.025rem;
+      color: var(--muted);
+      line-height: 1.85;
+      margin-bottom: 2.6rem;
+      text-align: center;
+    }
+
+    .links {
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      display: flex;
+      gap: 2.2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .links a {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text);
+      text-decoration: none;
+      padding-bottom: 3px;
+      border-bottom: 1px solid var(--rule);
+      transition: color 0.18s ease, border-color 0.18s ease;
+    }
+
+    .links a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-media">
+      <img src="LT_talking.jpeg" alt="" class="banner">
+      <img src="headshot.jpeg" alt="Lew Tucker" class="headshot">
+    </div>
+    <h1>Lew Tucker, Ph.D.</h1>
+    <div class="rule"></div>
+    <div class="label-title">Tech Advisor</div>
+    <p class="bio">
+      Computer scientist, open source advocate, and technology executive.<br>
+      Former VP &amp; CTO Cloud Computing at Cisco.<br>
+      Alumni of Sun Microsystems, Salesforce, and Thinking Machines Corporation.
+    </p>
+    <nav class="links">
+      <a href="https://en.wikipedia.org/wiki/Lew_Tucker" target="_blank" rel="noopener">Wikipedia</a>
+      <a href="https://www.linkedin.com/in/lewtucker/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.slideshare.net/lewtucker/" target="_blank" rel="noopener">SlideShare</a>
+    </nav>
+  </div>
+</body>
+</html>
