@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentations — Lew Tucker</title>
+  <style>
+    :root {
+      --bg: #f7f5f2; --text: #1a1a1a; --muted: #6b6560;
+      --accent: #8b6f5e; --rule: #e0dbd4; --red: #b81c34;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, serif; background: var(--bg); color: var(--text);
+      display: flex; flex-direction: column; align-items: center;
+      min-height: 100vh; padding: 48px 24px; }
+    header { width: 100%; max-width: 720px; margin-bottom: 40px; }
+    header a { font-size: 13px; color: var(--muted); text-decoration: none; }
+    header a:hover { color: var(--red); }
+    h1 { font-size: 28px; font-weight: normal; color: var(--text); margin-top: 12px; }
+    hr { border: none; border-top: 1px solid var(--rule); margin: 16px 0 0; }
+    .list { width: 100%; max-width: 720px; display: flex; flex-direction: column; gap: 18px; }
+    .card { background: #fff; border: 1px solid var(--rule); padding: 22px 26px;
+      display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+    .card-info h2 { font-size: 20px; font-weight: normal; color: var(--text); margin-bottom: 6px; }
+    .card-info p  { font-size: 14px; color: var(--muted); line-height: 1.6; }
+    .card-links { display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; }
+    .btn { display: inline-block; padding: 7px 18px; font-size: 13px; font-family: Georgia, serif;
+      text-decoration: none; border: 1px solid; white-space: nowrap; }
+    .btn-view { background: var(--red); color: #fff; border-color: var(--red); }
+    .btn-view:hover { background: #8a1228; border-color: #8a1228; }
+    .btn-pdf  { background: transparent; color: var(--muted); border-color: var(--rule); }
+    .btn-pdf:hover  { border-color: var(--muted); color: var(--text); }
+    .btn-pptx { background: transparent; color: var(--muted); border-color: var(--rule); }
+    .btn-pptx:hover { border-color: var(--muted); color: var(--text); }
+    .date { font-size: 12px; color: var(--muted); margin-top: 10px; font-style: italic; }
+    .thumb { flex-shrink: 0; width: 160px; display: block; }
+    .thumb img { width: 100%; display: block; border: 1px solid var(--rule); }
+    .thumb:hover img { border-color: var(--muted); }
+    .card-info { flex: 1; }
+    @media (max-width: 600px) {
+      .card { flex-wrap: wrap; }
+      .thumb { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/">&larr; lewtucker.com</a>
+    <h1>Presentations</h1>
+    <hr>
+  </header>
+  <div class="list">
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=aI-N_w2xcbI" target="_blank" rel="noopener"><img src="thumbs/aI-N_w2xcbI.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>The Emerging Multicloud World</h2>
+        <p>KubeCon + CloudNativeCon North America keynote.</p>
+        <div class="date">KubeCon Seattle keynote &middot; December 2018</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=aI-N_w2xcbI" target="_blank" rel="noopener">Video &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=u4RL5KqbzvA" target="_blank" rel="noopener"><img src="thumbs/u4RL5KqbzvA.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>Istio Service Mesh</h2>
+        <p>Networking for microservices: traffic management, visibility, and service authentication with Istio.</p>
+        <div class="date">SF Bay Area OpenInfra Day keynote &middot; 2018</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=u4RL5KqbzvA" target="_blank" rel="noopener">Video &rarr;</a>
+        <a class="btn btn-pdf" href="https://www.slideshare.net/slideshow/istio-service-mesh-108015768/108015768" target="_blank" rel="noopener">Slides &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=Qk2ZdHnHh0Y" target="_blank" rel="noopener"><img src="thumbs/Qk2ZdHnHh0Y.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>Re-thinking Networking for Microservices</h2>
+        <p>KubeCon + CloudNativeCon Europe keynote.</p>
+        <div class="date">KubeCon Copenhagen keynote &middot; May 2018</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=Qk2ZdHnHh0Y" target="_blank" rel="noopener">Video &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=frrT3zssxok" target="_blank" rel="noopener"><img src="thumbs/frrT3zssxok.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>Welcome to the Multi-cloud World</h2>
+        <p>Delivering a seamless, secure experience across public clouds, private clouds, and legacy systems.</p>
+        <div class="date">OpenStack Summit Sydney &middot; November 2017</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=frrT3zssxok" target="_blank" rel="noopener">Video &rarr;</a>
+        <a class="btn btn-pdf" href="https://www.slideshare.net/slideshow/welcome-to-the-multicloud-world/82189958" target="_blank" rel="noopener">Slides &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=69TLjG0ZWYA" target="_blank" rel="noopener"><img src="thumbs/69TLjG0ZWYA.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>OpenStack: The Road Ahead for Cloud Computing Platforms</h2>
+        <p>Change is happening faster than ever, and cloud platforms must keep pace.</p>
+        <div class="date">OpenStack Summit Boston &middot; May 2017</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=69TLjG0ZWYA" target="_blank" rel="noopener">Video &rarr;</a>
+        <a class="btn btn-pdf" href="https://www.slideshare.net/slideshow/open-stack-the-road-ahead/75853526" target="_blank" rel="noopener">Slides &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=xTM0kFwT6Y8&amp;t=120s" target="_blank" rel="noopener"><img src="thumbs/xTM0kFwT6Y8.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>OpenStack and the Power of Community-Developed Software</h2>
+        <p>OpenStack and cloud computing expand into an ever broader range of public, private, and hybrid use cases.</p>
+        <div class="date">OpenStack Summit Austin &middot; April 2016</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=xTM0kFwT6Y8&amp;t=120s" target="_blank" rel="noopener">Video &rarr;</a>
+        <a class="btn btn-pdf" href="https://www.slideshare.net/slideshow/openstack-and-the-power-of-communitydeveloped-software/61757690" target="_blank" rel="noopener">Slides &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=Gljgr3uTepg" target="_blank" rel="noopener"><img src="thumbs/Gljgr3uTepg.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>OpenStack: Changing the Face of Service Delivery</h2>
+        <p>How software-driven infrastructure opens new possibilities for network service providers, media, and content companies.</p>
+        <div class="date">OpenStack Summit Tokyo &middot; October 2015</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=Gljgr3uTepg" target="_blank" rel="noopener">Video &rarr;</a>
+        <a class="btn btn-pdf" href="https://www.slideshare.net/slideshow/openstack-changing-the-face-of-service-delivery-53498209/53498209" target="_blank" rel="noopener">Slides &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=Nkcf_lA0s88" target="_blank" rel="noopener"><img src="thumbs/Nkcf_lA0s88.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>OpenStack in an Ever Expanding World of Possibilities</h2>
+        <p>OpenStack's expansion from service providers and enterprise private clouds to media companies and big science.</p>
+        <div class="date">OpenStack Summit Vancouver &middot; May 2015</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=Nkcf_lA0s88" target="_blank" rel="noopener">Video &rarr;</a>
+        <a class="btn btn-pdf" href="https://www.slideshare.net/slideshow/openstack-in-an-ever-expanding-world-of-possibilities-vancouver-2015-summit/48583249" target="_blank" rel="noopener">Slides &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=q1djC21CJ94" target="_blank" rel="noopener"><img src="thumbs/q1djC21CJ94.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>OpenStack as a Strategy for Future Growth at Cisco</h2>
+        <p>Cisco's investments in OpenStack across technology and business areas.</p>
+        <div class="date">OpenStack Summit Vancouver &middot; May 2015</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=q1djC21CJ94" target="_blank" rel="noopener">Video &rarr;</a>
+        <a class="btn btn-pdf" href="https://www.slideshare.net/slideshow/tucker-open-stacksummitstrategyforfuturegrowth/48583019" target="_blank" rel="noopener">Slides &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=-VJqGryznws" target="_blank" rel="noopener"><img src="thumbs/-VJqGryznws.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>A World of Many (OpenStack) Clouds: The Making of the Intercloud</h2>
+        <p>Clouds today are islands. Is it time to envision a world of many interconnected OpenStack clouds?</p>
+        <div class="date">OpenStack Summit Paris &middot; November 2014</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=-VJqGryznws" target="_blank" rel="noopener">Video &rarr;</a>
+        <a class="btn btn-pdf" href="https://www.slideshare.net/slideshow/world-of-many-openstack-clouds-the-making-of-the-intercloud/41632948" target="_blank" rel="noopener">Slides &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=DMNy3f2EqXo" target="_blank" rel="noopener"><img src="thumbs/DMNy3f2EqXo.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>OpenStack and the Transformation of the Data Center</h2>
+        <p>How virtualization and cloud computing are transforming the traditional data center.</p>
+        <div class="date">OpenStack Summit Atlanta &middot; May 2014</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=DMNy3f2EqXo" target="_blank" rel="noopener">Video &rarr;</a>
+        <a class="btn btn-pdf" href="https://www.slideshare.net/slideshow/open-stack-atlanta-2014tucker/34589864" target="_blank" rel="noopener">Slides &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=h0w7Ol6gK3Q" target="_blank" rel="noopener"><img src="thumbs/h0w7Ol6gK3Q.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>Cloud Computing and the Promise of Everything as a Service</h2>
+        <p>Keynote address at IEEE GLOBECOM 2013.</p>
+        <div class="date">IEEE GLOBECOM keynote &middot; December 2013</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=h0w7Ol6gK3Q" target="_blank" rel="noopener">Video &rarr;</a>
+        <a class="btn btn-pdf" href="https://www.slideshare.net/slideshow/cloud-computing-and-the-promise-of-everything-as-a-service/29261672" target="_blank" rel="noopener">Slides &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=iubGYuChH-s" target="_blank" rel="noopener"><img src="thumbs/iubGYuChH-s.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>OpenStack, SDN, and the Future of Infrastructure-as-a-Service</h2>
+        <p>Infrastructure-as-a-Service, software-defined networking, and what OpenStack makes possible.</p>
+        <div class="date">OpenStack Summit Portland &middot; April 2013</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=iubGYuChH-s" target="_blank" rel="noopener">Video &rarr;</a>
+        <a class="btn btn-pdf" href="https://www.slideshare.net/slideshow/tucker-open-stack-summit-2013/19017521" target="_blank" rel="noopener">Slides &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=kWP9VE4K8cU" target="_blank" rel="noopener"><img src="thumbs/kWP9VE4K8cU.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>Cisco and OpenStack</h2>
+        <p>How cloud computing is changing the way we think about data centers, applications, and services.</p>
+        <div class="date">O&rsquo;Reilly Velocity &middot; June 2011</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=kWP9VE4K8cU" target="_blank" rel="noopener">Video &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v=8mlXKzBF2qA" target="_blank" rel="noopener"><img src="thumbs/8mlXKzBF2qA.jpg" alt="" loading="lazy"></a>
+      <div class="card-info">
+        <h2>Cloud Computing with Red Hat &amp; Cisco</h2>
+        <p>Keynote on the Cisco and Red Hat partnership and the growth of software-as-a-service.</p>
+        <div class="date">Red Hat Summit &amp; JBoss World keynote &middot; May 2011</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="https://www.youtube.com/watch?v=8mlXKzBF2qA" target="_blank" rel="noopener">Video &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-info">
+        <h2>Parallel Thinking</h2>
+        <p>How a 1985 Boston startup named Thinking Machines invented the architecture
+           that led to modern AI data centers. ZKM Connection Machine Symposium, March 2026.</p>
+        <div class="date">March 2026 &middot; 13 slides</div>
+      </div>
+      <div class="card-links">
+        <a class="btn btn-view" href="../slides/Parallel_Thinking_3.pdf" target="_blank">PDF &darr;</a>
+        <a class="btn btn-pptx" href="../slides/Parallel_Thinking_3.pptx" download>PowerPoint &darr;</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
